@@ -1,0 +1,27 @@
+body{
+    background-color: #107dac;
+}
+
+.navigation{
+    background-color: white;
+    border: solid 1px black;
+}
+
+p{
+    font-family: 'Hind Guntur', sans-serif;
+    font-size: 15px;
+}
+
+.navigation:visited{
+    color: #107dac;
+}
+
+.title{
+    color: white;
+    text-align: center;
+}
+
+input{
+    width: 25%;
+    margin: 0.2em;
+}
