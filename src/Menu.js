@@ -11,7 +11,7 @@ export default function Menu({ title, recipes }) {
             <h1 className="title">{title}</h1>
             </header>
 
-            <div className="recipes">
+            <div className="grid-container">
             {recipes.map((recipe, i) => (
             <Recipe key={i} {...recipe} />
             ))}

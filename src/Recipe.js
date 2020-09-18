@@ -1,27 +1,31 @@
 import React, { useState } from 'react'
-import {
-    Card, CardBody, Button, Collapse
-  } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import ColorList from "./ColorList"
+import colorData from "./color-data.json";
+import AddColorForm from './AddColorForm';
   
 
-export default function Recipe({ name, ingredients, steps, logo }) {
-    const [isOpen, setIsOpen] = useState(false);
+export default function Recipe({ nameID, ingredients, steps, logo }) {
+  const [colors] = useState(colorData);
 
-    const toggle = () => setIsOpen(!isOpen);
+    const [modal, setModal] = useState(false);
+
+    const toggle = () => setModal(!modal);
     
     return (
 
-<div className="recipe_container">
-    <section id={name.toLowerCase().replace(/ /g, "-")}>
+    <div className="grid-item">
+    <section id={nameID.toLowerCase().replace(/ /g, "-")}>
         <>{logo}</>
-        <h1 className="recipe_name">{name}</h1>
+        <h4 className="recipe_name">{nameID}</h4>
     </section>
 
-    <Button color="info" onClick={toggle} >Recipe</Button>  
-            <Collapse isOpen={isOpen}>
-                <Card>
-                <CardBody>
-                <h2>Ingredients</h2>
+    <Button color="info" onClick={toggle} >Recipe</Button>
+
+    <Modal isOpen={modal} toggle={toggle}>
+        <ModalHeader toggle={toggle}>{nameID}</ModalHeader>
+        <ModalBody>
+        <h2>Ingredients</h2>
                 <ul className="ingredients">
                 {ingredients.map((ingredient, i) => (
                 <li key={i}>{ingredient.name}</li>))}
@@ -32,9 +36,17 @@ export default function Recipe({ name, ingredients, steps, logo }) {
                 {steps.map((step, i) => (
                 <p key={i}>{step}</p>))}
                 </section>
-                </CardBody>
-                </Card>
-            </Collapse>
-</div>
+
+        <AddColorForm />
+        </ModalBody>
+        <ModalFooter>
+          <Button color="secondary" onClick={toggle}>Close</Button>
+        </ModalFooter>
+      </Modal>
+      
+      
+      <ColorList
+      colors={colors} />
+      </div>
         );
         }

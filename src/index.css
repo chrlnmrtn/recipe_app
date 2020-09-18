@@ -1,5 +1,40 @@
+:root{
+    box-sizing: border-box;
+}
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    background-color: #fce474;
+    padding: 10px;
+  font-family: 'Hind Guntur', sans-serif;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  }
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    margin: 0.1em;
+  }
+
+  .recipe_container{
+    margin: 1em;
+    padding: 2em;
+    background-color: #fce474;
+}
+
+.form-comment{
+  border: solid 0.1em grey;
+}
+
 .photo{
-    height: 300px;
+  height: 300px;
   width: 300px;
 }
 
@@ -25,29 +60,11 @@ h3{
     font-family: 'Caveat', cursive;
     margin-top: 0.1em;
     font-size: 5em;
-}
-
-.recipes{
-  background-color: #FFFFFF;
-  font-family: 'Hind Guntur', sans-serif;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.recipe_container{
-    margin: 1em;
-    padding: 2em;
-    border: ridge 0.2em grey;
-    background-color: #fce474;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.26);
 }
 
 .recipe_name{
     padding-top: 0.3em;
     font-family: 'Open Sans', sans-serif;
 }
-
