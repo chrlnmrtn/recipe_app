@@ -1,11 +1,16 @@
 import React from "react";
 import pancake from "../images/pancake.jpg"
 import ricotta from "../images/ricotta.jpg"
+import potatohash from "../images/potatohash.jpg"
+import orangescones from "../images/orangeminiscones.jpg"
+import eggssrirachatory from "../images/eggsrirahcatory.jpg"
+import browniegranola from "../images/browniegranola.jpg"
 
 export const data = [
     {
+    id : 1,
     logo:<img src={ricotta} className="photo" alt="pancake"/>,
-    name: "RICOTTA WAFFLES",
+    nameID: "RICOTTA WAFFLES",
     ingredients: [
     { name: "220 g (1 3/4 cups) plain (all-purpose) flour", amount: 1.75, measurement: "220g (1 3/4cups)" },
     { name: "30 g (1/4 cup) cornflour (cornstarch)", amount: 0.25, measurement: "30g (1/4cup)" },
@@ -30,8 +35,9 @@ export const data = [
     ]
     },
     {
+    id : 2,
     logo:<img src={pancake} className="photo" alt="pancake"/>,
-    name: "FAT, FLUFFY PANCAKES",
+    nameID: "FAT, FLUFFY PANCAKES",
     ingredients: [
     { name: "125 g (1 cup) plain (all-purpose) flour", amount: 1, measurement: "125g (1 cup)" },
     { name: "2 teaspoons baking powder", amount: 2, measurement: "2 teaspoons" },
@@ -62,8 +68,10 @@ export const data = [
     },
     
     {
-    logo:<img src={ricotta} className="photo" alt="pancake"/>,
-    name: "LOADED BAKED POTATO HASH",
+        
+    id : 3,
+    logo:<img src={potatohash} className="photo" alt="loaded baked patota hash"/>,
+    nameID: "LOADED BAKED POTATO HASH",
     ingredients: [
     { name: "3 baked and cooled potatoes", amount: 3, measurement: "3" },
     { name: "225g (1/2lb) thick-cut good-quality bacon", amount: 1, measurement: "225g (1/2lb)" },
@@ -86,8 +94,10 @@ export const data = [
     ]
     },
     {
-    logo:<img src={ricotta} className="photo" alt="pancake"/>,
-    name: "CHOCOLATE ORANGE MINI SCONES",
+        
+    id : 4,
+    logo:<img src={orangescones} className="photo" alt="chocolate orange mini scones"/>,
+    nameID: "CHOCOLATE ORANGE MINI SCONES",
     ingredients: [
     { name: "250 g (2 cups) plain (all-purpose) flour", amount: 1, measurement: "" },
     { name: "1 tablespoon baking powder", amount: 1, measurement: "" },
@@ -113,8 +123,10 @@ export const data = [
     ]
     },
     {
-    logo:<img src={ricotta} className="photo" alt="pancake"/>,
-    name: "EGGS IN SRIRACHATORY",
+        
+    id : 5,
+    logo:<img src={eggssrirachatory} className="photo" alt="eggs in srirachatory"/>,
+    nameID: "EGGS IN SRIRACHATORY",
     ingredients: [
     { name: "2 tablespoons olive oil", amount: 1, measurement: "" },
     { name: "1 medium onion, chopped", amount: 1, measurement: "" },
@@ -139,8 +151,9 @@ export const data = [
     ]
     },
     {
-    logo:<img src={ricotta} className="photo" alt="pancake"/>,
-    name: "BROWNIE GRANOLA",
+        id : 6,
+    logo:<img src={browniegranola} className="photo" alt="brownie granola"/>,
+    nameID: "BROWNIE GRANOLA",
     ingredients: [
     { name: "250 g (2 1/2 cups) oats", amount: 1, measurement: "" },
     { name: "125 g (1 cup) roughly chopped walnuts", amount: 1, measurement: "" },

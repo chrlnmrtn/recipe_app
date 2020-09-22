@@ -4,7 +4,7 @@ import ricotta from "../images/ricotta.jpg"
 export const data5 = [
 {
     logo:<img src={ricotta} className="photo" alt="pancake"/>,
-    name: "Frozen treats",
+    nameID: "Frozen treats",
     ingredients: [
     { name: "", amount: 1, measurement: "" },
     { name: "", amount: 0.25, measurement: "" },
