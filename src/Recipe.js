@@ -22,9 +22,9 @@ export default function Recipe({ nameID, ingredients, steps, logo }) {
 
     <Button color="info" onClick={toggle} >Recipe</Button>
 
-    <Modal isOpen={modal} toggle={toggle}>
+    <Modal isOpen={modal} toggle={toggle} >
         <ModalHeader toggle={toggle}>{nameID}</ModalHeader>
-        <ModalBody>
+        <ModalBody >
         <h2>Ingredients</h2>
                 <ul className="ingredients">
                 {ingredients.map((ingredient, i) => (

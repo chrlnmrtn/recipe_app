@@ -29,6 +29,10 @@
     background-color: #fce474;
 }
 
+.modalcontent{
+  width: 75%;
+}
+
 .form-comment{
   border: solid 0.1em grey;
 }
