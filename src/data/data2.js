@@ -6,7 +6,13 @@ import musubifriedrice from "../images/musubifriedrice.jpg"
 import pulledbbqchicken from "../images/pulledbbqchicken.jpg"
 import gingerdijon from "../images/gingerdijon.jpg"
 import roastedcauliflower from "../images/roastedcauliflower.jpg"
-import ricotta from "../images/ricotta.jpg"
+import bbqchicpizza from "../images/bbqchickenpizza.jpg"
+import buffpanzanella from "../images/buffalopanzanella.jpg"
+import weekragu from "../images/weeknightragu.jpg"
+import garlicbread from "../images/garlicbread.jpg"
+import chicskewers from "../images/chickenskewers.jpg"
+import brusselssprouts from "../images/bruseelssprouts.jpg"
+import enchilada from "../images/enchilada.jpg"
 
 export const data2 = [
 {
@@ -77,7 +83,7 @@ export const data2 = [
     logo:<img src={pulledbbqchicken} className="photo" alt="pulled bbq chicken sandwiches w/ sesame slaw"/>,
     nameID: "PULLED BBQ CHICKEN SANDWICHES with SESAME SLAW",
     ingredients: [
-    { name: "FOR THE PULLED CHICKEN", amount: 2, measurement: "" },
+    { name: <h5>{"FOR THE PULLED CHICKEN"}</h5>, amount: 2, measurement: "" },
     { name: "900 g (2 lb) boneless skinless chicken thighs", amount: 1, measurement: "" },
     { name: "1 teaspoon sea salt (or coarse kosher salt)", amount: 0.25, measurement: "" },
     { name: "1/2 teaspoon freshly graound black pepper", amount: 3, measurement: "" },
@@ -85,7 +91,7 @@ export const data2 = [
     { name: "4 garlic cloves", amount: 0.5, measurement: "" },
     { name: "1 quantity of Ginger Dijon BBQ Sauce", amount: 0.5, measurement: "" },
     { name: "", amount: 2, measurement: "" },
-    { name: "FOR THE SLAW", amount: 2, measurement: "" },
+    { name: <h5>{"FOR THE SLAW"}</h5>, amount: 2, measurement: "" },
     { name: "1 tablespoon toasted sesame oil", amount: 0.5, measurement: "" },
     { name: "3 tablespoons rice wine vinegar", amount: 1, measurement: "" },
     { name: "1 teaspoon sea salt", amount: 1, measurement: "" },
@@ -96,7 +102,7 @@ export const data2 = [
     { name: "20 g (1/3 cup) chopped fresh coriander", amount: 2, measurement: "" },
     { name: "4 spring onions, thinly sliced", amount: 2, measurement: "" },
     { name: "", amount: 2, measurement: "" },
-    { name: "FOR ASSEMBLY", amount: 2, measurement: "" },
+    { name:<h5>{"FOR ASSEMBLY"}</h5>, amount: 2, measurement: "" },
     { name: "4-6 good-quality hamburger buns", amount: 2, measurement: "" }
     ],
     steps: [
@@ -139,11 +145,11 @@ export const data2 = [
     logo:<img src={californiaburgers} className="photo" alt="california burgers"/>,
     nameID: "CALIFORNIA BURGERS",
     ingredients: [
-    { name: "FOR THE CARAMELISED ONIONS", amount: 1, measurement: "" },
+    { name: <h5>{"FOR THE CARAMELISED ONIONS"}</h5>, amount: 1, measurement: "" },
     { name: "2 tablespoons butter", amount: 0.25, measurement: "" },
     { name: "1 large onion, chopped", amount: 3, measurement: "" },
     { name: "", amount: 1, measurement: "" },
-    { name: "FOR THE SECRET SAUCE", amount: 0.5, measurement: "" },
+    { name: <h5>{"FOR THE SECRET SAUCE"}</h5>, amount: 0.5, measurement: "" },
     { name: "60 ml (1/4 cup) mayonnaise", amount: 0.5, measurement: "" },
     { name: "2 tablespoons ketchup", amount: 0.5, measurement: "" },
     { name: "1 tablespoon pickle relish", amount: 1, measurement: "" },
@@ -152,12 +158,12 @@ export const data2 = [
     { name: "1/2 teaspoon white sugar", amount: 2, measurement: "" },
     { name: "1/4 teaspoon garlic powder", amount: 2, measurement: "" },
     { name: "", amount: 2, measurement: "" },
-    { name: "FOR THE BURGER", amount: 2, measurement: "" },
+    { name: <h5>{"FOR THE BURGER"}</h5>, amount: 2, measurement: "" },
     { name: "450 g (1 lb) ground beef", amount: 2, measurement: "" },
     { name: "sea salt and freshly ground black pepper", amount: 2, measurement: "" },
     { name: "your favorite cheese", amount: 2, measurement: "" },
     { name: "", amount: 2, measurement: "" },
-    { name: "FOR ASSEMBLY", amount: 2, measurement: "" },
+    { name: <h5>{"FOR ASSEMBLY"}</h5>, amount: 2, measurement: "" },
     { name: "4 good-quality hamburger buns", amount: 2, measurement: "" },
     { name: "1 beef tomato, sliced", amount: 2, measurement: "" },
     { name: "iceberg lettuce", amount: 2, measurement: "" }
@@ -178,12 +184,12 @@ export const data2 = [
     logo:<img src={steakseasoned} className="photo" alt="steak-seasoned steak fries"/>,
     nameID: "STEAK-SEASONED STEAK FRIES",
     ingredients: [
-    { name: "FOR THE FRIES", amount: 1, measurement: "" },
+    { name: <h5>{"FOR THE FRIES"}</h5>, amount: 1, measurement: "" },
     { name: "3 medium Maris Piper potatoes", amount: 0.25, measurement: "" },
     { name: "2 tablespoons vegetable oil", amount: 3, measurement: "" },
     { name: "1 tablespoon Steak Seasoning", amount: 1, measurement: "" },
     { name: "", amount: 0.5, measurement: "" },
-    { name: "FOR THE SRIRACHA KETCHUP", amount: 0.5, measurement: "" },
+    { name: <h5>{"FOR THE SRIRACHA KETCHUP"}</h5>, amount: 0.5, measurement: "" },
     { name: "1 teaspoon Sriracha", amount: 0.5, measurement: "" },
     { name: "120 ml (1/2 cup) ketchup", amount: 1, measurement: "" }
     ],
@@ -198,104 +204,188 @@ export const data2 = [
     ],
     },
     {
-        logo:<img src={ricotta} className="photo" alt="bbq chicken pizza"/>,
-        nameID: "BBQ CHICKEN PIZZA",
-        ingredients: [
-        { name: "olive oil", amount: 1, measurement: "" },
-        { name: "1/2 batch of Easy Pizza Dough", amount: 0.25, measurement: "" },
-        { name: "120-180 ml (1/2 - 3/4 cup) of Ginger Dijon BBQ Sauce", amount: 3, measurement: "" },
-        { name: "225 g (8 oz) shredded mozzarella", amount: 1, measurement: "" },
-        { name: "265 g (1 1/2 cups) chopped or shredded cooked chicken", amount: 0.5, measurement: "" },
-        { name: "150g (3/4 cup fresh sweetcorn, right off one cob)", amount: 0.5, measurement: "" },
-        { name: "1 shallot, thinly sliced", amount: 0.5, measurement: "" },
-        { name: "25 g (1/2 cup) chopped fresh coriander", amount: 1, measurement: "" }
-        ],
-        steps: [
-        "Preheat your oven to 250°C (500°F/Gas 10) and line a large baking sheet with aluminium foil.",
-
-        "Grease the foil with a little olive oil and press out the dough into a rough 28 x 43 cm (11 x 17 in) rectangle. SPread out the sauce on top of the dough, really using as much as you want to make it your level of sauciness. Top with the mozzarella, followed by the chicken, corn, and the shallot. Bake for 10-12 minutes, until its hot, bubbly, and golden brown.",
-
-        "Let cool for a few minutes then top with the coriander and serve."
-        ]
-        },
-        {
-            logo:<img src={ricotta} className="photo" alt="pancake"/>,
-            nameID: "TACOS",
-            ingredients: [
-            { name: "", amount: 1, measurement: "" },
-            { name: "", amount: 0.25, measurement: "" },
-            { name: "", amount: 3, measurement: "" },
-            { name: "", amount: 1, measurement: "" },
-            { name: "", amount: 0.5, measurement: "" },
-            { name: "", amount: 0.5, measurement: "" },
-            { name: "", amount: 0.5, measurement: "" },
-            { name: "", amount: 1, measurement: "" },
-            { name: "", amount: 1, measurement: "" },
-            { name: "", amount: 2, measurement: "" },
-            { name: "", amount: 2, measurement: "" }
-            ],
-            steps: [
-            ""
-            ]
-            },
-            {
-    logo:<img src={ricotta} className="photo" alt="pancake"/>,
-    nameID: "TACOS",
+        id : 14,
+    logo:<img src={bbqchicpizza} className="photo" alt="bbq chicken pizza"/>,
+    nameID: "BBQ CHICKEN PIZZA",
     ingredients: [
-    { name: "", amount: 1, measurement: "" },
-    { name: "", amount: 0.25, measurement: "" },
-    { name: "", amount: 3, measurement: "" },
-    { name: "", amount: 1, measurement: "" },
-    { name: "", amount: 0.5, measurement: "" },
-    { name: "", amount: 0.5, measurement: "" },
-    { name: "", amount: 0.5, measurement: "" },
-    { name: "", amount: 1, measurement: "" },
-    { name: "", amount: 1, measurement: "" },
-    { name: "", amount: 2, measurement: "" },
-    { name: "", amount: 2, measurement: "" }
+    { name: "olive oil", amount: 1, measurement: "" },
+    { name: "1/2 batch of Easy Pizza Dough", amount: 0.25, measurement: "" },
+    { name: "120-180 ml (1/2 - 3/4 cup) of Ginger Dijon BBQ Sauce", amount: 3, measurement: "" },
+    { name: "225 g (8 oz) shredded mozzarella", amount: 1, measurement: "" },
+    { name: "265 g (1 1/2 cups) chopped or shredded cooked chicken", amount: 0.5, measurement: "" },
+    { name: "150g (3/4 cup fresh sweetcorn, right off one cob)", amount: 0.5, measurement: "" },
+    { name: "1 shallot, thinly sliced", amount: 0.5, measurement: "" },
+    { name: "25 g (1/2 cup) chopped fresh coriander", amount: 1, measurement: "" }
     ],
     steps: [
-    ""
+    "Preheat your oven to 250°C (500°F/Gas 10) and line a large baking sheet with aluminium foil.",
+
+    "Grease the foil with a little olive oil and press out the dough into a rough 28 x 43 cm (11 x17 in) rectangle. SPread out the sauce on top of the dough, really using as much as you want tomake it your level of sauciness. Top with the mozzarella, followed by the chicken, corn, andthe shallot. Bake for 10-12 minutes, until its hot, bubbly, and golden brown.",
+
+    "Let cool for a few minutes then top with the coriander and serve."
     ]
     },
     {
-    logo:<img src={ricotta} className="photo" alt="pancake"/>,
-    nameID: "TACOS",
+        id : 15,
+    logo:<img src={buffpanzanella} className="photo" alt="buffalo panzanella"/>,
+    nameID: "BUFFALO PANZANELLA",
     ingredients: [
+    { name: <h5>{"FOR THE VINAIGRETTE"}</h5>, amount: 1, measurement: "" },
+    { name: "1 teaspoon Dijon mustard", amount: 1, measurement: "" },
+    { name: "1 clove garlic, minced", amount: 0.25, measurement: "" },
+    { name: "4 tablespoons hot wing sauce", amount: 3, measurement: "" },
+    { name: "1 tablespoon rice wine vinegar", amount: 1, measurement: "" },
+    { name: "80 ml (1/3 cup) olive oil", amount: 0.5, measurement: "" },
+    { name: "1/2 teaspoon sea salt", amount: 0.5, measurement: "" },
+    { name: "1/4 teaspoon freshly ground black pepper", amount: 0.5, measurement: "" },
     { name: "", amount: 1, measurement: "" },
-    { name: "", amount: 0.25, measurement: "" },
-    { name: "", amount: 3, measurement: "" },
-    { name: "", amount: 1, measurement: "" },
-    { name: "", amount: 0.5, measurement: "" },
-    { name: "", amount: 0.5, measurement: "" },
-    { name: "", amount: 0.5, measurement: "" },
-    { name: "", amount: 1, measurement: "" },
-    { name: "", amount: 1, measurement: "" },
-    { name: "", amount: 2, measurement: "" },
-    { name: "", amount: 2, measurement: "" }
+    { name: <h5>{"FOR THE PANZANELLA"}</h5>, amount: 1, measurement: "" },
+    { name: "1/3-1/2 loaf French or sourdough bread, chopped into 2 1/2 cm (1 in) cubes",amount: 2, measurement: "" },
+    { name: "2 tablespoons olive oil", amount: 2, measurement: "" },
+    { name: "sea salt and freshly ground black pepper", amount: 1, measurement: "" },
+    { name: "1 shallot, thinly sliced", amount: 1, measurement: "" },
+    { name: "240 g (1 1/2 cups) halved cherry tomatoes", amount: 1, measurement: "" },
+    { name: "3 stalks celery, sliced, leaves and all", amount: 1, measurement: "" },
+    { name: "90 g (2 cups) baby rocket (arugula)", amount: 1, measurement: "" },
+    { name: "100 g (1/2 cup) blue cheese, crumbled", amount: 1, measurement: "" }
     ],
     steps: [
-    ""
+    "For the vinaigrette, throw everything into a small jar with a tight-fitting lid and shakuntil combined. Set aside.",
+
+    "To toast the bread, preheat the oven to 180°C (350°F/Gas 4) and line a large baking sheewith baking parchment. Toss the bread cubes with the olive oil, season with salt anpepper, and bake for 10 minutes, shaking the baking sheet halfway through to mix 'em upOnce they're toasted let them cool for a few minutes while you prep the rest of thingredients.",
+
+    "to assemble, toss the croutons with the vegetables and blue cheese, then season and toswith the buffalo vinaigrette. Serve right awya. If you wanted to take this out for a spito a picnic, wait to toss the vanaigrette in there until right before serving."
     ]
     },
     {
-    logo:<img src={ricotta} className="photo" alt="pancake"/>,
-    nameID: "TACOS",
+        id : 16,
+    logo:<img src={weekragu} className="photo" alt="weeknight ragu"/>,
+    nameID: "WEEKNIGHT RAGU",
     ingredients: [
-    { name: "", amount: 1, measurement: "" },
-    { name: "", amount: 0.25, measurement: "" },
-    { name: "", amount: 3, measurement: "" },
-    { name: "", amount: 1, measurement: "" },
-    { name: "", amount: 0.5, measurement: "" },
-    { name: "", amount: 0.5, measurement: "" },
-    { name: "", amount: 0.5, measurement: "" },
-    { name: "", amount: 1, measurement: "" },
-    { name: "", amount: 1, measurement: "" },
-    { name: "", amount: 2, measurement: "" },
-    { name: "", amount: 2, measurement: "" }
+    { name: "450 g (1 lb) hot italian sausage", amount: 1, measurement: "" },
+    { name: "1 tablespoon olive oil", amount: 0.25, measurement: "" },
+    { name: "2 x 400 g (1 x 28 oz) chopped tomatoes", amount: 3, measurement: "" },
+    { name: "1/2 medium onion, very roughly chopped into quarters", amount: 1, measurement: "" },
+    { name: "4 garlic cloves, smashed", amount: 0.5, measurement: "" },
+    { name: "15 g (1/2 cup) chopped parsley", amount: 0.5, measurement: "" },
+    { name: "1/4 teaspoon sea salt", amount: 0.5, measurement: "" },
+    { name: "240 ml (1 cup) red wine or beef stock", amount: 1, measurement: "" },
+    { name: "450 g (1 lb) pasta", amount: 1, measurement: "" },
+    { name: "Parmesan cheese, to serve", amount: 2, measurement: "" }
     ],
     steps: [
-    ""
+    "In a medium-sized pan break up and brown the sausage wth the olive oil.",
+
+    "While that's happenning, make the tomato sauce by bitzing the tomatoes, onion garlic, parsley, salt, and pepper in a blender until smooth.",
+
+    "Once the meat has browned and the fat's rendered forming brown bits on the bottom of the pan, deglaze it pan by adding the wine or beef stock and scraping the bits. up. Cook for a couple of minutes until almost all the liquid has evaporated. Add the tomato sauce and simmer for 30 minutes.",
+
+    "Meanwhile bring a pot of water to a boil and cook your pasta according to the packet instructions.",
+
+    "When the pasta's done, toss with the sauce and serve with a load of Parmesan cheese."
     ]
     },
+    {
+        id : 17,
+    logo:<img src={garlicbread} className="photo" alt="garlic bread"/>,
+    nameID: "GARLIC BREAD",
+    ingredients: [
+    { name: "125 g (1/2 cup) unsalted butter", amount: 1, measurement: "" },
+    { name: "8 garlic cloves, minced", amount: 0.25, measurement: "" },
+    { name: "sea salt and freshly ground black pepper", amount: 3, measurement: "" },
+    { name: "450 g (1 lb) loaf French bread", amount: 1, measurement: "" }
+    ],
+    steps: [
+    "Preheat your oven to 180°C(350°F/Gas 4).",
+
+    "To make the garlic butter mixture, melt down the butter in a small saucepan over a low heat, add the garlic with a nice pinch of salt and pepper, and let it steep for about 20 minutes. Once it's had some time to hang out, split the loaf of French bread down the middle, brush on the garlice goodness and bake on a baking sheet lined with baking parchment, galic-side up, for around 10-15 minutes, until golden brown."
+    ]
+    },
+    {
+        id : 18,
+    logo:<img src={chicskewers} className="photo" alt="honey sriracha chicken skewers"/>,
+    nameID: "HONEY SRIRACHA CHICKEN SKEWERS",
+    ingredients: [
+    { name: "680 g (1 1/2 lb) boneless, skinless chicken thighs, cut into 5 cm (2 in) pieces", amount: 1, measurement: "" },
+    { name: "1/2 teaspoon sea salt", amount: 0.25, measurement: "" },
+    { name: "1/4 teaspoon freshly ground black pepper", amount: 3, measurement: "" },
+    { name: "175 g (1/2 cup) honey", amount: 1, measurement: "" },
+    { name: "120 ml (1/2 cup) rice wine vinegar", amount: 0.5, measurement: "" },
+    { name: "3 tablespoons Sriracha", amount: 0.5, measurement: "" },
+    { name: "1 tablespoon toasted sesame seeds", amount: 0.5, measurement: "" }
+    ],
+    steps: [
+    "Add the chicken to a large zip-top bag. In a bowl whisk together everything else besides the sesame seeds. Add 60 ml(1/4 cup) of that to the chicken, shake and set aside. Put the rest of the sauce in a medium-sized saucepan, bring to a boil and cook for 2-3minutes, until it has thickened slightly.",
+
+    "Remove the chiken from the bag and put on to skewers of your choice. I like a good flat metal skewer but bamboo works too (just remember you need to soak them for at least an hour beforehand so nodoby goes up in flames).",
+
+    "After you skewer the chicken, heat up the BBQ grill to a medium-high heat. If you don't have a BBQ grill go ahead and use a griddle or some sort of flat cooking surface, also on medium-high heat.",
+
+    "Place skewers on the grill and brush with sauce, grill for 3-5minutes, then turn brush with sauce frequently until the meat is cooked through, another 5 minutes or so. Take off the grill and sprinkle with the sesame seeds, if using. Let the chicken rest for a few minutes before serving."
+    ]
+    },
+    {
+        id : 19,
+    logo:<img src={brusselssprouts} className="photo" alt="honey sriracha brussels sprouts"/>,
+    nameID: "HONEY SRIRACHA BRUSSLES SPROUTS",
+    ingredients: [
+    { name: "1 tablespoon olive oil", amount: 1, measurement: "" },
+    { name: "2 tablespoon honey", amount: 0.25, measurement: "" },
+    { name: "1 tablespoon Sriracha", amount: 3, measurement: "" },
+    { name: "1/2 teaspoon sea salt", amount: 1, measurement: "" },
+    { name: "pinch of black pepper", amount: 0.5, measurement: "" },
+    { name: "450 g (1 lb) Brussels sprouts, halved lengthwise", amount: 0.5, measurement: "" },
+    { name: "1 tablespoon toasted sesame seeds", amount: 0.5, measurement: "" }
+    ],
+    steps: [
+    "Preheat the oven to 220°C(455°F/Gas 7) and line a baking sheet with bakng parchment.",
+
+    "Add the olive oil, honey, Sriracha, and salt to a large bowl and toss the sprouts until they are evenly coated. Turn them all out onto the baking sheet so they're laying cut-side down and roast for 12-14minutes, tossing halfway through, until brown and slightly crisp. Plate on to a serving dish and top with sesame seeds, if using."
+    ]
+    },
+    {
+        id : 20,
+    logo:<img src={enchilada} className="photo" alt="enchilada"/>,
+    nameID: "THE WHOLE ENCHILADA",
+    ingredients: [
+    { name: <h5>{"FOR THE SAUCE"}</h5>, amount: 1, measurement: "" },
+    { name: "960 ml (4 cups) low-sodium chicken stock", amount: 0.25, measurement: "" },
+    { name: "30 g (1 oz) dried guajillo chillies, stems and seeds removed*", amount: 3, measurement: "" },
+    { name: "175 g (6 oz) can of tomato paste", amount: 1, measurement: "" },
+    { name: "2 tablespoons plain (all-purpose) flour", amount: 0.5, measurement: "" },
+    { name: "2 tablespoons vegetable oil", amount: 0.5, measurement: "" },
+    { name: "1/2 teaspoon ground cumin", amount: 0.5, measurement: "" },
+    { name: "1/2 teaspoon ground coriander", amount: 1, measurement: "" },
+    { name: "2-3 teaspoons salt", amount: 1, measurement: "" },
+    { name: "", amount: 2, measurement: "" },
+    { name: <h5>{"FOR THE ASSEMBLY"}</h5>, amount: 2, measurement: "" },
+    { name: "16 corn tortillas, 10-13cm (4-5 in) in diameter**", amount: 2, measurement: "" },
+    { name: "1 rotisserie chicken, shredded", amount: 2, measurement: "" },
+    { name: "20 g (1/3 cup) chopped fresh coriander (cilatro) plus more for garnish", amount: 2, measurement: "" },
+    { name: "1 shaloot, minced", amount: 2, measurement: "" },
+    { name: "230 g (a scant 2 cups) grated Cheddar, or colby-jack cheese, divided", amount: 2, measurement: "" },
+    { name: "", amount: 2, measurement: "" },
+    { name: <h5>{"FOR THE BONUS RICE"}</h5>, amount: 2, measurement: "" },
+    { name: "1 teaspoon vegetable oil", amount: 2, measurement: "" },
+    { name: "200 g (1 cup) long-grain white rice", amount: 2, measurement: "" },
+    { name: "240 ml (1 cup) low-sodium chicken stock", amount: 2, measurement: "" }
+    ],
+    steps: [
+    "*You can also look for ground chillies, usually sold near the dried chillies, but not chilli powder that has additional spices. This is actually my preferred ingredient for this sauce but it's a little more difficult to find. If you do find it, use 30 g (1oz) and skip the step where the peppers steep.",
+
+    "**For the corn tortillas, the size restriction makes sure they can all fit in a 23 x 33 cm (9 x 13 in) pan. If you want to use larger tortillas then go ahead and use two 23 x 23 cm (9 x 9 in) baking dishes.",
+
+    "To make the sauce, bring the stock and chillies to a boil in a medium saucepan. Turn off the heat, cover and let them sit for 20 minutes, stirring halfway through to make sure they're all soaking in the tub. This is a good time to prepare the rest of the ingredients for the enchiladas. Once the 20 minutes are up, blitz in a blender for about 30 seconds, until smooth. It's okay if there are still some chilli flakes. Leave this in the blender for now.",
+
+    "Preheat your oven to 180C (3500 F/Gas 4). In the same saucepan you used for the chillies (no need wash it out), combine the tomato paste, flour, oil, cumin, and coriander. Cook over a medium heat for about a minute, just until it all turns a darker shade of red. Add the blended chilli stock mixture and whisk to combine. Bring to a simmer and cook for 5 minutes, until the sauce has thickened slightly. Season to taste with the salt, then reserve a cup for the rice.",
+
+    "Prepare the corn tortillas by either heating them up directly over a high flame or in a dry frying pan, a minute or so on each side.",
+
+    "To assemble, start with the filling. Mix together the shredded chicken, coriander, shallot, half the cheese, and a soup ladle (or cup) of the enchilada sauce. Pour about half a Ladle (h cup) of enchilada sauce in the bottom of a 23 33 cm (9 x 13 in) pan. Place a good dollop of filling in each tortilla. ROIL the tortillas and place seam-side down in the pan. Continue until the pan is full. There should be 2 rows in there — it might be a tight fit but it's cool. If you have any, leftover filling can be used in nachos or some sort of rice-bowl situation.",
+
+    "Pour the remaining enchilada sauce evenly over the top of the enchiladas. Top with the Leftover cheese and bake for about 15 minutes, until the sauce is bubbling and the cheese has melted. TOP with a sprinkling of fresh coriander and serve.",
+
+    "While the enchiladas bubble in the oven you can make the rice. In a medium saucepan with a tightfitting lid, heat up the oil over a medium—high heat. Add the rice and cook until golden and toasty. Add the chicken stock and that reserved cup of enchilada sauce you took out of the batch earlier and bring the mixture to a boil. Reduce to a Low simmer, cover, and cook for 17—20 minutes, until all the Liquid has evaporated. Fluff with a fork and serve with the enchiladas.",
+    ]
+    }
 ];

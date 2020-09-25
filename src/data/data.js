@@ -151,7 +151,7 @@ export const data = [
     ]
     },
     {
-        id : 6,
+    id : 6,
     logo:<img src={browniegranola} className="photo" alt="brownie granola"/>,
     nameID: "BROWNIE GRANOLA",
     ingredients: [
