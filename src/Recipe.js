@@ -25,11 +25,12 @@ export default function Recipe({ nameID, ingredients, steps, logo }) {
     <Modal isOpen={modal} toggle={toggle} >
         <ModalHeader toggle={toggle}>{nameID}</ModalHeader>
         <ModalBody >
+        <>{logo}</>
         <h2>Ingredients</h2>
-                <ul className="ingredients">
-                {ingredients.map((ingredient, i) => (
-                <li key={i}>{ingredient.name}</li>))}
-                </ul>
+                  <ul className="ingredients">
+                  {ingredients.map((ingredient, i) => (
+                  <li key={i}>{ingredient.name}</li>))}
+                  </ul>
                 
                 <section className="instructions">
                 <h2>Cooking Instructions</h2>

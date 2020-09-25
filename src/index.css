@@ -1,32 +1,68 @@
-:root{
-    box-sizing: border-box;
+:root {
+  box-sizing: border-box;
 }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    background-color: #fce474;
-    padding: 10px;
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+:focus {
+  outline: none;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  gap: 1em;
+  padding-bottom: 0.5em;
+}
+.navigation li {
+  list-style: none;
+}
+
+
+.navigation-button {
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  background-color: #fce474;
+  padding: 10px;
   font-family: 'Hind Guntur', sans-serif;
   cursor: pointer;
   border: none;
   text-align: left;
   outline: none;
   font-size: 15px;
+  margin-top: 0.5em;
   }
 
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    text-align: center;
-    margin: 0.1em;
-  }
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  margin: 0.1em;
+}
 
-  .recipe_container{
-    margin: 1em;
-    padding: 2em;
-    background-color: #fce474;
+.recipe_container{
+  margin: 1em;
+  padding: 2em;
+  background-color: #fce474;
 }
 
 .modalcontent{
@@ -41,6 +77,8 @@
   height: 300px;
   width: 300px;
 }
+
+
 
 .header{
     background-color:#2a9df4;
@@ -62,7 +100,6 @@ h3{
 
 .title{
     font-family: 'Caveat', cursive;
-    margin-top: 0.1em;
     font-size: 5em;
     color: black;
     background-color: rgba(0, 0, 0, 0.26);
@@ -71,4 +108,10 @@ h3{
 .recipe_name{
     padding-top: 0.3em;
     font-family: 'Open Sans', sans-serif;
+}
+
+.inputSearch{
+  text-align: center;
+  font-family: 'Hind Guntur', sans-serif;
+  font-weight: bold;
 }

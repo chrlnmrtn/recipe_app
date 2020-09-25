@@ -11,8 +11,7 @@ import FrozenTreats from './FrozenTreats'
 import Home from './Home'
 import Tacos from './Tacos'
 import Drinks from './Drinks'
-import FortheDog from './FortheDog'
-import MakeitYourself from './MakeitYourself'
+import MakeitYourself from './MakeyourOwn'
 
 
 export default function App() {
@@ -78,15 +77,9 @@ export default function App() {
                 render={() => (
                 <Drinks />
                 )}></Route>
-            
-            <Route
-                path="/FortheDog"
-                render={() => (
-                <FortheDog />
-                )}></Route>
 
             <Route
-                path="/MakeitYourself"
+                path="/MakeyourOwn"
                 render={() => (
                 <MakeitYourself />
                 )}></Route>

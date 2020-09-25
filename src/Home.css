@@ -4,7 +4,6 @@ body{
 
 .navigation{
     background-color: white;
-    border: solid 1px black;
 }
 
 p{
@@ -12,16 +11,11 @@ p{
     font-size: 15px;
 }
 
-.navigation:visited{
-    color: #107dac;
-}
+.active-tab {
+    border-bottom: 4px solid gold;
+  }
 
 .title{
     color: white;
     text-align: center;
-}
-
-input{
-    width: 25%;
-    margin: 0.2em;
 }
