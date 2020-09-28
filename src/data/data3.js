@@ -1,10 +1,18 @@
 import React from "react";
-import ricotta from "../images/ricotta.jpg"
+import salsaverde from "../images/salsaverde.jpg"
+import restaurantsalsa from "../images/restaurantsalsa.jpg"
+import chickentingatacos from "../images/chickentingatacos.jpg"
+import pickledradish from "../images/pickledradish.jpg"
+import carneasadatacos from "../images/carneasadatacos.jpg"
+import cornchickpeatacos from "../images/cornchickpeatacos.jpg"
+import prawntacos from "../images/prawntacos.jpg"
+import breakfasttacos from "../images/breakfasttacos.jpg"
+import avocadosalsa from "../images/avocadosalsa.jpg"
 
 export const data3 = [
     {
     id : 21,
-    logo:<img src={ricotta} className="photo" alt="pickled radish"/>,
+    logo:<img src={pickledradish} className="photo" alt="pickled radish"/>,
     nameID: "PICKLED RADISH",
     ingredients: [
     { name: "10 radishes", amount: 1, measurement: "" },
@@ -21,7 +29,7 @@ export const data3 = [
     },
     {
     id : 22,
-    logo:<img src={ricotta} className="photo" alt="avocado salsa"/>,
+    logo:<img src={avocadosalsa} className="photo" alt="avocado salsa"/>,
     nameID: "AVOCADO SALSA",
     ingredients: [
     { name: "1 large avocado, roughly chopped", amount: 1, measurement: "" },
@@ -40,7 +48,7 @@ export const data3 = [
     },
     {
     id : 23,
-    logo:<img src={ricotta} className="photo" alt="salsa verde"/>,
+    logo:<img src={salsaverde} className="photo" alt="salsa verde"/>,
     nameID: "SALSA VERDE",
     ingredients: [
     { name: "450 g (1 1b) tomatillos", amount: 1, measurement: "" },
@@ -60,7 +68,7 @@ export const data3 = [
     },
     {
     id : 24,
-    logo:<img src={ricotta} className="photo" alt="restaurant salsa"/>,
+    logo:<img src={restaurantsalsa} className="photo" alt="restaurant salsa"/>,
     nameID: "RESTAURANT SALSA",
     ingredients: [
     { name: "450 g (1 1b) ripe tomatoes", amount: 1, measurement: "" },
@@ -86,7 +94,7 @@ export const data3 = [
     },
     {
     id : 25,
-    logo:<img src={ricotta} className="photo" alt="carne asada tacos"/>,
+    logo:<img src={carneasadatacos} className="photo" alt="carne asada tacos"/>,
     nameID: "CARNE ASADA TACOS",
     ingredients: [
     { name: "675 g (lh 1b) skirt or flank steak", amount: 1, measurement: "" },
@@ -108,7 +116,7 @@ export const data3 = [
     },
     {
     id : 26,
-    logo:<img src={ricotta} className="photo" alt="breakfast tacos"/>,
+    logo:<img src={breakfasttacos} className="photo" alt="breakfast tacos"/>,
     nameID: "BREAKFAST TACOS",
     ingredients: [
     { name: "1 teaspoon vegetable oil", amount: 1, measurement: "" },
@@ -127,7 +135,7 @@ export const data3 = [
     },
     {
     id : 27,
-    logo:<img src={ricotta} className="photo" alt="corn and chickpea tacos"/>,
+    logo:<img src={cornchickpeatacos} className="photo" alt="corn and chickpea tacos"/>,
     nameID: "CORN AND CHICKPEA TACOS",
     ingredients: [
     { name: "350 g (lh cups) fresh or frozen sweetcorn", amount: 1, measurement: "" },
@@ -158,7 +166,7 @@ export const data3 = [
     },
     {
     id : 28,
-    logo:<img src={ricotta} className="photo" alt="chicken tinga tacos"/>,
+    logo:<img src={chickentingatacos} className="photo" alt="chicken tinga tacos"/>,
     nameID: "CHICKEN TINGA TACOS",
     ingredients: [
     { name: "900 g (2 1b) boneless, skinless chicken thighs, seasoned with sea salt and freshly ground black pepper", amount: 1, measurement: "" },
@@ -195,7 +203,7 @@ export const data3 = [
     },
     {
     id : 29,
-    logo:<img src={ricotta} className="photo" alt="roasted chipole prawn tacos"/>,
+    logo:<img src={prawntacos} className="photo" alt="roasted chipole prawn tacos"/>,
     nameID: "ROASTED CHIPOTLE PRAWN TACOS",
     ingredients: [
     { name: "450 g (1 1b) prawns (shrimps), peeled and deveined", amount: 1, measurement: "" },

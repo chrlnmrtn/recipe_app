@@ -332,6 +332,8 @@ export const data4 = [
 
     "Once they're all cut up, toss in a Large (1 gallon) zip-top bag, sift in the remaining tablespoon of coating and shake the bag to get all the sides coated. Store in the zip-top bag for up to 2 weeks."
     ]
-    }
+    },
+
+    
     
 ];
