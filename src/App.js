@@ -27,12 +27,11 @@ export default function App() {
     return (
         <div className="container">
             <div className="header">
-            <div>Whip <u>IT</u> Up!</div>
-            <div><h3>OVER 75, FAST, FUN AND EASY RECIPES</h3></div>
+                 <div>Whip <u>IT</u> Up!</div>
+            <div><h3>OVER 75, FAST, FUN AND EASY RECIPES</h3></div> 
             </div>
 
-            
-        <Navigation selectedTab={selectedTab} onSelectTab={handleSelectTab} />
+            <Navigation selectedTab={selectedTab} onSelectTab={handleSelectTab} />
 
         <Switch>
 
@@ -83,6 +82,7 @@ export default function App() {
                 render={() => (
                 <MakeitYourself />
                 )}></Route>
+
 
             <Redirect to="/Home" />
         </Switch>

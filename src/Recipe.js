@@ -1,24 +1,25 @@
 import React, { useState } from 'react'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import ColorList from "./ColorList"
-import colorData from "./color-data.json";
-import AddColorForm from './AddColorForm';
+import CommentList from "./CommentList"
+import AddCommentForm from './AddCommentForm';
+import { v4 } from "uuid";
   
 
 export default function Recipe({ nameID, ingredients, steps, logo }) {
-  const [colors] = useState(colorData);
+  const [comments, setComments] = useState("");
+  const [modal, setModal] = useState(false);
 
-    const [modal, setModal] = useState(false);
+  
+  const toggle = () => setModal(!modal);
 
-    const toggle = () => setModal(!modal);
-    
-    return (
-
+  
+  return (
     <div className="grid-item">
     <section id={nameID.toLowerCase().replace(/ /g, "-")}>
         <>{logo}</>
         <h4 className="recipe_name">{nameID}</h4>
     </section>
+
 
     <Button color="info" onClick={toggle} >Recipe</Button>
 
@@ -38,16 +39,39 @@ export default function Recipe({ nameID, ingredients, steps, logo }) {
                 <p key={i}>{step}</p>))}
                 </section>
 
-        <AddColorForm />
+
+      <h4>Comments: </h4>            
+      <div className="comment-list">
+      <CommentList
+      comments={comments}
+      
+      />
+
+    </div>
+    <div className="addcommentform">
+    <AddCommentForm
+        onNewColor={(userName, comment, rating) => {
+        const newComment = [
+        ...comments,
+        {
+        id: v4(),
+        rating,
+        userName,
+        comment
+        }
+        ];
+        setComments(newComment);
+        }}/>
+        
+    </div>
+
+        
         </ModalBody>
         <ModalFooter>
           <Button color="secondary" onClick={toggle}>Close</Button>
         </ModalFooter>
       </Modal>
       
-      
-      <ColorList
-      colors={colors} />
       </div>
         );
         }

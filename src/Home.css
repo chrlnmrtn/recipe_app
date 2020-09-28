@@ -6,16 +6,59 @@ body{
     background-color: white;
 }
 
+.title{
+    color: rgb(255, 128, 149);
+
+}
+
 p{
     font-family: 'Hind Guntur', sans-serif;
     font-size: 15px;
 }
 
 .active-tab {
-    border-bottom: 4px solid gold;
+    border-bottom: 4px solid #fce474;
   }
 
-.title{
-    color: white;
-    text-align: center;
+
+.breakfast{
+    background-color: #f8cdcd;
+}
+.LunchandDinner{
+    background-color: #d7e4fc;
+}
+.Sweets{
+    background-color: #ccfdc7;
+}
+
+.homeTitle{
+    font-family: 'Caveat', cursive;
+    font-size: 3em;
+    color: rgb(255, 128, 149);
+    text-shadow: 2px 2px #413e3e;
+}
+
+.grid-featured {
+    display: grid;
+    background-color: #fce37496;
+    padding: 10px;
+    font-family: 'Hind Guntur', sans-serif;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 0.5em;
+    }
+
+.featured-content{
+    margin-left: 1em;
+    padding: 1em;
+    background-color: #ffd1d1 ;
+}
+
+.featured-header{
+    margin-left: 0.5em;
+    padding: 0.5em;
+    background-color: #abd5ee ;
 }
